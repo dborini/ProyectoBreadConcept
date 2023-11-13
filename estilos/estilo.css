@@ -30,12 +30,6 @@ body {
 /* ... */
 
 
-
-
-
-
-
-
 .error {
     border: 2px solid red; /* Cambia el borde a rojo en caso de error */
   }
@@ -896,4 +890,76 @@ p.author a {
     font-weight: bold;
     color: #fff;
     font-size: larger;
+}
+
+/*Estilos contacto*/
+.form-content{
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.form-content h2{
+    color: #f4f6f9;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label{
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+}
+
+input , textarea{
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4f6f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus{
+    outline: 1px solid #1E92E9;
+}
+
+.botonenv{
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.botonenv:hover{
+    background-color: #219BF9;
+}
+
+@media(max-width:991px){
+    .form-content{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+footer ul{
+    list-style-type: none; /* Esto elimina las viñetas/puntos en las listas */
+    padding: 0; /* Esto elimina el relleno predeterminado en los márgenes */
 }
